@@ -4,10 +4,14 @@
       <h1>Logo da empresa</h1>
     </div>
     <div id="container-login">
-      <v-form>
-        <v-text-field label="Insira seu usuário" v-model="usuario"></v-text-field>
-        <v-text-field label="Insira sua senha" v-model="senha" type="password"></v-text-field>
-      </v-form>
+      <div id="container-login-form">
+        <h2>Faça seu login</h2>
+        <v-form>
+          <v-text-field label="Insira seu usuário" v-model="usuario"></v-text-field>
+          <v-text-field label="Insira sua senha" v-model="senha" type="password"></v-text-field>
+          <v-btn>Login</v-btn>
+        </v-form>
+      </div>
     </div>
   </div>
 </template>
@@ -21,8 +25,4 @@ export default {
 };
 </script>
 
-<style>
-#login {
-  background-color: --primary-color-pale-spring-bud;
-}
-</style>
+<style src="./style.scss" lang="scss" scoped/>

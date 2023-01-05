@@ -1,0 +1,48 @@
+@import '../../scss/global.scss';
+
+#login {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-color-pale-spring-bud;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+
+  #container-login-form{
+    background-color: $primary-color-papaya-whip;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    
+    .v-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .v-text-field {
+        width: 80%;
+      }
+
+      .v-btn {
+        width: 30%;
+        background-color: $secundary-color-pale-spring-bud;
+      }
+    }
+  }
+}
